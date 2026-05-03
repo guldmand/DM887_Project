@@ -1,61 +1,42 @@
 # Prompts for DM887 GRPO Project
 
-This folder contains final prompts for generating candidate PoC notebooks using different AI coding tools.
+This folder contains self-contained prompts for generating candidate PoC notebooks using different AI coding tools.
 
-Recommended folder location:
-
-```text
-prompts/
-```
+Each tool-specific prompt now includes the full common project context. You do **not** need to paste `common-agent-context.md` first.
 
 ## Files
 
-- `prompt-copilot-cli.md`
-- `prompt-claude-code.md`
-- `prompt-codex.md`
-- `prompt-merge-final-notebook.md`
-- `common-agent-context.md`
+- `common-agent-context.md`  
+  Shared context for documentation and future prompt editing.
+
+- `prompt-copilot-cli.md`  
+  Self-contained prompt for GitHub Copilot CLI.
+
+- `prompt-claude-code.md`  
+  Self-contained prompt for Claude Code CLI.
+
+- `prompt-codex.md`  
+  Self-contained prompt for ChatGPT Codex.
+
+- `prompt-merge-final-notebook.md`  
+  Self-contained prompt for merging the three candidate notebooks.
 
 ## Workflow
 
-1. Run the Copilot CLI prompt to create:
+1. Paste the full contents of `prompt-copilot-cli.md` into Copilot CLI.
+2. Paste the full contents of `prompt-claude-code.md` into Claude Code.
+3. Paste the full contents of `prompt-codex.md` into Codex.
+4. Inspect all three candidate notebooks.
+5. Use `prompt-merge-final-notebook.md` to create the final merged notebook.
 
-```text
-notebooks/DM887_Project_GRPO_Midway_PoC_CopilotCLI.ipynb
-```
+## Important
 
-2. Run the Claude Code prompt to create:
+The prompts explicitly state that:
 
-```text
-notebooks/DM887_Project_GRPO_Midway_PoC_ClaudeCode.ipynb
-```
-
-3. Run the Codex prompt to create:
-
-```text
-notebooks/DM887_Project_GRPO_Midway_PoC_Codex.ipynb
-```
-
-4. Inspect all three notebooks.
-
-5. Use `prompt-merge-final-notebook.md` to create:
-
-```text
-notebooks/DM887_Project_GRPO_Midway_PoC.ipynb
-```
-
-## Local material
-
-The repository may contain Git-ignored local folders:
-
-```text
-papers/
-slides/
-```
-
-These are supporting material only. Agents should prioritize committed files such as:
-
-```text
-docs/references/reading-list.md
-docs/course-materials.md
-```
+- `DM887_Project.pdf` is the source of truth.
+- The full project is a GRPO-control project.
+- The midway scope is only:
+  1. related work,
+  2. MDP notation/formal setup,
+  3. PPO/SAC/TD3 baseline results/protocol.
+- The midway notebook should not implement the final GRPO variant unless explicitly requested.
