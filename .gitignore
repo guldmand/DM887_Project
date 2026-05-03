@@ -1,0 +1,46 @@
+# Git ignore file for DM887 Project
+
+__pycache__/
+
+# virtual environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# jupyter
+.ipynb_checkpoints/
+
+# log files
+*.log
+logs/
+
+# academic papers relevcant to the project
+papers/
+
+# gym & objectrl
+external/objectrl/
+external/Gymnasium/
+
+# local files 
+results/
+figures/generated-debug/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/settings.json
