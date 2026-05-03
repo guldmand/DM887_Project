@@ -18,12 +18,14 @@ logs/
 
 # academic papers relevcant to the project
 papers/
+papers_original/
 
 # gym & objectrl
 external/objectrl/
 external/Gymnasium/
 
-# local files 
+# local files
+slides/ 
 results/
 figures/generated-debug/
 README_OLD.md

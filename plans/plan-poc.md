@@ -99,9 +99,14 @@ The notebook assumes this repository layout:
 
 ```text
 repo/
-├── objectrl/
+├── external/
+│   ├── objectrl/
+│   └── Gymnasium/
 ├── notebooks/
-│   └── DM887_Project_GRPO_Midway_PoC.ipynb
+│   ├── DM887_Project_GRPO_Midway_PoC_CopilotCLI.ipynb <-- for Copilot Cli
+│   ├── DM887_Project_GRPO_Midway_PoC_ClaudeCode.ipynb <-- for Claude Code
+│   ├── DM887_Project_GRPO_Midway_PoC_Codex.ipynb <-- for Codex 
+│   └── DM887_Project_GRPO_Midway_PoC.ipynb <-- Final Midway Notebook
 ├── src/
 ├── configs/
 ├── results/
@@ -117,8 +122,8 @@ Path setup:
 from pathlib import Path
 
 REPO_ROOT = Path.cwd().resolve()
-OBJECTRL_DIR = REPO_ROOT / "objectrl"
-RESULTS_DIR = REPO_ROOT / "results"
+OBJECTRL_DIR = REPO_ROOT / "external" / "objectrl"
+GYMNASIUM_DIR = REPO_ROOT / "external" / "Gymnasium"
 RAW_RESULTS_DIR = RESULTS_DIR / "raw"
 PROCESSED_RESULTS_DIR = RESULTS_DIR / "processed"
 LOGS_DIR = RESULTS_DIR / "logs"
