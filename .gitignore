@@ -26,6 +26,7 @@ external/Gymnasium/
 # local files 
 results/
 figures/generated-debug/
+README_OLD.md
 
 # LaTeX build artifacts
 *.aux
@@ -44,3 +45,4 @@ figures/generated-debug/
 .DS_Store
 Thumbs.db
 .vscode/settings.json
+
