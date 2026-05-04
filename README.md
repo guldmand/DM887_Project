@@ -64,8 +64,6 @@ DM887_Project/
 │   ├── DM887_Project_GRPO_Midway_PoC_Codex.ipynb
 │   └── DM887_Project_GRPO_Midway_PoC_CopilotCLI.ipynb
 │
-├── papers/
-├── papers_original/
 │
 ├── plans/
 │   ├── plan-poc.md
@@ -101,8 +99,6 @@ DM887_Project/
 │   ├── run_midway_vector_baselines.sh
 │   ├── run_project_objectrl_baseline.py
 │   └── summarize_project_baselines.py
-│
-└── slides/
 ```
 
 ---
@@ -188,6 +184,7 @@ Current practical status:
 - `DM887_Project_GRPO_Midway_PoC_Codex.ipynb` is the main local working notebook for the midway PoC.
 - `DM887_Project_GoogleColab.ipynb` is used for running the CarRacing CNN baselines on Colab GPU.
 - `DM887_Project_GRPO_Midway_PoC_ClaudeCode.ipynb` and `DM887_Project_GRPO_Midway_PoC_CopilotCLI.ipynb` are candidate notebooks from other AI-tool workflows.
+- Note: From the original condidate notebooks, i decided to continue building upon the `DM887_Project_GRPO_Midway_PoC_Codex.ipynb`.
 - A final cleaned notebook should be produced later by merging the best, non-duplicated, and up-to-date material from the candidate notebooks.
 
 The final merged notebook should be created only after the CarRacing Colab results have been copied back into the local repository and the figures have been regenerated.
@@ -375,7 +372,7 @@ The existing candidate notebooks should be kept as provenance until the final no
 
 ---
 
-## Current status summary
+## Current summary
 
 At the current stage, the repository contains:
 
@@ -395,3 +392,23 @@ Remaining work:
 - update the report experiments section with the completed figures,
 - implement and evaluate the GRPO-control variant for the final project,
 - complete the theory/proofs section for the final project.
+
+
+---
+
+## Project Status
+
+The midway focus is:
+
+- literature and related work,
+- MDP notation,
+- baseline experiment setup,
+- PPO/SAC/TD3 baseline runs,
+- LaTeX report preparation.
+
+The final phase will extend this work with:
+
+- the proposed GRPO-control variant,
+- theoretical analysis,
+- full experimental comparison,
+- final report writing.
