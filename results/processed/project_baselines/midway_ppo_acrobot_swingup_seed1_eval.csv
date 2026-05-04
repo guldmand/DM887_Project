@@ -1,0 +1,16 @@
+algorithm,project_env,seed,train_step,eval_episode,eval_return,wall_time_seconds,status
+ppo,acrobot_swingup,1,0,0,0.02382332645356655,20.449,completed
+ppo,acrobot_swingup,1,0,1,0.850536584854126,20.449,completed
+ppo,acrobot_swingup,1,0,2,3.482271432876587,20.449,completed
+ppo,acrobot_swingup,1,5000,0,32.67289352416992,20.449,completed
+ppo,acrobot_swingup,1,5000,1,0.21871383488178253,20.449,completed
+ppo,acrobot_swingup,1,5000,2,5.693741513823625e-07,20.449,completed
+ppo,acrobot_swingup,1,10000,0,1.0307475983850622e-09,20.449,completed
+ppo,acrobot_swingup,1,10000,1,3.661238431930542,20.449,completed
+ppo,acrobot_swingup,1,10000,2,0.8006898760795593,20.449,completed
+ppo,acrobot_swingup,1,15000,0,0.0674605742096901,20.449,completed
+ppo,acrobot_swingup,1,15000,1,38.42625045776367,20.449,completed
+ppo,acrobot_swingup,1,15000,2,40.07190704345703,20.449,completed
+ppo,acrobot_swingup,1,19999,0,0.07482755929231644,20.449,completed
+ppo,acrobot_swingup,1,19999,1,0.0007038556504994631,20.449,completed
+ppo,acrobot_swingup,1,19999,2,14.818167686462402,20.449,completed

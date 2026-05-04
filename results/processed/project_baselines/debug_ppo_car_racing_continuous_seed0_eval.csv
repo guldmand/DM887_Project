@@ -1,0 +1,3 @@
+algorithm,project_env,seed,train_step,eval_episode,eval_return,wall_time_seconds,status,observation_mode,model_type
+ppo,car_racing_continuous,0,200,0,-92.9328621908117,6.816,completed,cnn_chw_float32_in_0_1_shape_3x96x96,cnn_ppo
+ppo,car_racing_continuous,0,400,0,-93.127147766322,12.88,completed,cnn_chw_float32_in_0_1_shape_3x96x96,cnn_ppo

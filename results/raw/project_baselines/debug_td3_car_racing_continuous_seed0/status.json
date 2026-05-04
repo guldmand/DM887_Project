@@ -1,0 +1,25 @@
+{
+  "algorithm": "td3",
+  "csv_path": "/Users/guldmand/Dropbox/DataScience/Speciale/DM887_Project/results/processed/project_baselines/debug_td3_car_racing_continuous_seed0_eval.csv",
+  "device": "cpu",
+  "eval_episodes": 1,
+  "eval_frequency": 200,
+  "max_steps": 400,
+  "message": "",
+  "model_type": "cnn_td3",
+  "n_eval_rows": 2,
+  "observation_mode": "cnn_chw_float32_in_0_1_shape_3x96x96",
+  "project_env": "car_racing_continuous",
+  "run_mode": "debug",
+  "run_name": "debug_td3_car_racing_continuous_seed0",
+  "seed": 0,
+  "status": "completed",
+  "summary": {
+    "n_eval_blocks": 2,
+    "stopped_early": false,
+    "train_steps_completed": 400
+  },
+  "time_limit_minutes": 5.0,
+  "wall_time_seconds": 88.957,
+  "warmup_steps": 100
+}

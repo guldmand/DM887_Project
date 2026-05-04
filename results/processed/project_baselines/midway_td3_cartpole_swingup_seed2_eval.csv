@@ -1,0 +1,16 @@
+algorithm,project_env,seed,train_step,eval_episode,eval_return,wall_time_seconds,status
+td3,cartpole_swingup,2,0,0,0.101127989590168,100.366,completed
+td3,cartpole_swingup,2,0,1,0.07350680977106094,100.366,completed
+td3,cartpole_swingup,2,0,2,0.05115741863846779,100.366,completed
+td3,cartpole_swingup,2,5000,0,138.06344604492188,100.366,completed
+td3,cartpole_swingup,2,5000,1,136.9523468017578,100.366,completed
+td3,cartpole_swingup,2,5000,2,136.29849243164062,100.366,completed
+td3,cartpole_swingup,2,10000,0,150.38348388671875,100.366,completed
+td3,cartpole_swingup,2,10000,1,151.6643524169922,100.366,completed
+td3,cartpole_swingup,2,10000,2,154.73155212402344,100.366,completed
+td3,cartpole_swingup,2,15000,0,165.65487670898438,100.366,completed
+td3,cartpole_swingup,2,15000,1,166.4895782470703,100.366,completed
+td3,cartpole_swingup,2,15000,2,166.42481994628906,100.366,completed
+td3,cartpole_swingup,2,19999,0,202.5635223388672,100.366,completed
+td3,cartpole_swingup,2,19999,1,173.8319549560547,100.366,completed
+td3,cartpole_swingup,2,19999,2,198.19882202148438,100.366,completed

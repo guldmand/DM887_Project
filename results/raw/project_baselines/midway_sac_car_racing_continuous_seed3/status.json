@@ -1,0 +1,25 @@
+{
+  "algorithm": "sac",
+  "csv_path": "/content/DM887_Project/results/processed/project_baselines/midway_sac_car_racing_continuous_seed3_eval.csv",
+  "device": "cuda",
+  "eval_episodes": 3,
+  "eval_frequency": 1000,
+  "max_steps": 10000,
+  "message": "",
+  "model_type": "cnn_sac",
+  "n_eval_rows": 30,
+  "observation_mode": "cnn_chw_float32_in_0_1_shape_3x96x96",
+  "project_env": "car_racing_continuous",
+  "run_mode": "midway",
+  "run_name": "midway_sac_car_racing_continuous_seed3",
+  "seed": 3,
+  "status": "completed",
+  "summary": {
+    "n_eval_blocks": 10,
+    "stopped_early": false,
+    "train_steps_completed": 10000
+  },
+  "time_limit_minutes": 60.0,
+  "wall_time_seconds": 593.456,
+  "warmup_steps": 500
+}

@@ -12,10 +12,6 @@ env/
 # jupyter
 .ipynb_checkpoints/
 
-# log files
-*.log
-logs/
-
 # academic papers relevcant to the project
 papers/
 papers_original/
@@ -26,7 +22,6 @@ external/Gymnasium/
 
 # local files
 slides/ 
-results/
 figures/generated-debug/
 README_OLD.md
 

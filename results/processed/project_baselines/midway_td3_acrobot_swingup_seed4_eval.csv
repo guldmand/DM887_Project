@@ -1,0 +1,16 @@
+algorithm,project_env,seed,train_step,eval_episode,eval_return,wall_time_seconds,status
+td3,acrobot_swingup,4,0,0,0.02607145719230175,84.901,completed
+td3,acrobot_swingup,4,0,1,0.01574508473277092,84.901,completed
+td3,acrobot_swingup,4,0,2,42.90955352783203,84.901,completed
+td3,acrobot_swingup,4,5000,0,3.4618401527404785,84.901,completed
+td3,acrobot_swingup,4,5000,1,10.56657886505127,84.901,completed
+td3,acrobot_swingup,4,5000,2,11.246028900146484,84.901,completed
+td3,acrobot_swingup,4,10000,0,0.1533423364162445,84.901,completed
+td3,acrobot_swingup,4,10000,1,0.045675937086343765,84.901,completed
+td3,acrobot_swingup,4,10000,2,5.9395282733021304e-05,84.901,completed
+td3,acrobot_swingup,4,15000,0,0.15658028423786163,84.901,completed
+td3,acrobot_swingup,4,15000,1,0.00021194585133343935,84.901,completed
+td3,acrobot_swingup,4,15000,2,0.4414604902267456,84.901,completed
+td3,acrobot_swingup,4,19999,0,1.7483062109135972e-08,84.901,completed
+td3,acrobot_swingup,4,19999,1,23.552255630493164,84.901,completed
+td3,acrobot_swingup,4,19999,2,0.00015618550241924822,84.901,completed

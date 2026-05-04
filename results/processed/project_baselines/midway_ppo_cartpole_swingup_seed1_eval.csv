@@ -1,0 +1,16 @@
+algorithm,project_env,seed,train_step,eval_episode,eval_return,wall_time_seconds,status
+ppo,cartpole_swingup,1,0,0,24.610307693481445,21.774,completed
+ppo,cartpole_swingup,1,0,1,24.966297149658203,21.774,completed
+ppo,cartpole_swingup,1,0,2,24.513381958007812,21.774,completed
+ppo,cartpole_swingup,1,5000,0,32.09086227416992,21.774,completed
+ppo,cartpole_swingup,1,5000,1,32.37255096435547,21.774,completed
+ppo,cartpole_swingup,1,5000,2,31.95619773864746,21.774,completed
+ppo,cartpole_swingup,1,10000,0,33.51531219482422,21.774,completed
+ppo,cartpole_swingup,1,10000,1,32.930728912353516,21.774,completed
+ppo,cartpole_swingup,1,10000,2,33.180965423583984,21.774,completed
+ppo,cartpole_swingup,1,15000,0,33.26806640625,21.774,completed
+ppo,cartpole_swingup,1,15000,1,33.37920379638672,21.774,completed
+ppo,cartpole_swingup,1,15000,2,33.428279876708984,21.774,completed
+ppo,cartpole_swingup,1,19999,0,37.591941833496094,21.774,completed
+ppo,cartpole_swingup,1,19999,1,37.38333511352539,21.774,completed
+ppo,cartpole_swingup,1,19999,2,37.10542678833008,21.774,completed
