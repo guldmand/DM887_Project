@@ -16,10 +16,6 @@ env/
 papers/
 papers_original/
 
-# gym & objectrl
-external/objectrl/
-external/Gymnasium/
-
 # local files
 slides/ 
 figures/generated-debug/
