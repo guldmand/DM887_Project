@@ -1,5 +1,6 @@
 % Experiments
 
+\section{Experiments}
 \label{sec:experiments}
 
 The purpose of the midway experiments is to establish a reproducible baseline foundation for the later GRPO-control comparison. At this stage, the final GRPO-based control method has not yet been implemented. The experimental section therefore focuses on completing, validating, and interpreting the required PPO, SAC, and TD3 baselines on the three project environments.
@@ -67,14 +68,6 @@ For \texttt{acrobot\_swingup}, the results are more modest. PPO obtains the high
 For \texttt{car\_racing\_continuous}, the final returns remain negative for all three algorithms. This is expected under a short CNN-based midway budget. SAC obtains the best mean final return among the CarRacing baselines, followed by TD3 and PPO. The most important result for CarRacing at this stage is not high performance, but that the CNN pipeline runs successfully for all three algorithms and that CarRacing is now included in the same validated baseline matrix as the vector-control environments.
 
 Overall, the results show that the baseline pipeline is functional and complete. There is a clear learning signal in parts of the experiment set, especially for \texttt{cartpole\_swingup}, while \texttt{acrobot\_swingup} and \texttt{car\_racing\_continuous} remain more difficult under the midway budget.
-
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=\linewidth]{figures/midway/midway_vector_env_baselines.png}
-  \caption{Midway PPO, SAC, and TD3 baseline learning curves for the vector-control environments.}
-  \label{fig:midway-vector-baselines}
-\end{figure}
-
 
 \subsection{Stability and Variation}
 \label{sec:stability-variation}
