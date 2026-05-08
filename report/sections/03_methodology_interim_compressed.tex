@@ -1,0 +1,72 @@
+% Methodology
+
+\label{sec:methodology}
+
+This section fixes the notation and experimental protocol used in the midway study. The goal is not to present the final GRPO-control method, but to define the Markov decision process (MDP) setting, the baseline comparison setup, and the evaluation metric used for the PPO, SAC, and TD3 experiments.
+
+\subsection{MDP Formulation}
+\label{sec:methodology-mdp}
+
+The control tasks are modelled as Markov decision processes. An MDP is denoted by
+\[
+\mathcal{M} = (\mathcal{S}, \mathcal{A}, P, r, \gamma, \rho_0),
+\]
+where $\mathcal{S}$ is the state or observation space, $\mathcal{A}$ is the action space, $P(s' \mid s,a)$ is the transition kernel, $r(s,a)$ is the reward function, $\gamma \in [0,1)$ is the discount factor, and $\rho_0$ is the initial-state distribution. At time step $t$, the agent observes $s_t$, selects an action $a_t$, receives reward $r_{t+1}$, and transitions to $s_{t+1}$.
+
+A stochastic policy is written as $\pi_\theta(a \mid s)$, while a deterministic policy is written as $\mu_\theta(s)$. PPO and SAC use stochastic policies in this report, whereas TD3 uses a deterministic actor. A policy induces trajectories
+\[
+\tau = (s_0,a_0,r_1,s_1,a_1,r_2,\ldots),
+\]
+and the discounted return from time $t$ is
+\[
+G_t^\gamma = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}.
+\]
+The value function, action-value function, and advantage function are defined as
+\[
+V^\pi(s)=\mathbb{E}_{\pi}\!\left[G_t^\gamma \mid S_t=s\right],
+\qquad
+Q^\pi(s,a)=\mathbb{E}_{\pi}\!\left[G_t^\gamma \mid S_t=s,A_t=a\right],
+\]
+and
+\[
+A^\pi(s,a)=Q^\pi(s,a)-V^\pi(s).
+\]
+This notation is sufficient for the midway report, where the focus is on baseline algorithms and experimental validation. The final report will extend this notation when the GRPO-control update is formalized.
+
+\subsection{Baseline Algorithms}
+\label{sec:methodology-baselines}
+
+The midway experiments use PPO, SAC, and TD3 as baselines. PPO is an on-policy policy-gradient method based on clipped policy updates, SAC is an off-policy maximum-entropy actor-critic method, and TD3 is an off-policy deterministic actor-critic method designed to reduce overestimation errors in continuous control \citep{schulman2017proximal,haarnoja2018sacapps,fujimoto2018td3}. In this report, these algorithms are not the proposed contribution; they establish the comparison surface required for the later GRPO-control evaluation.
+
+The baseline matrix covers three environments and five random seeds. The vector-control environments are \texttt{cartpole\_swingup} and \texttt{acrobot\_swingup}. The image-based environment is \texttt{car\_racing\_continuous}. The resulting midway matrix is
+\[
+3 \text{ algorithms} \times 3 \text{ environments} \times 5 \text{ seeds} = 45 \text{ runs}.
+\]
+No hyperparameter optimization was performed, so the results should be interpreted as preliminary baseline behaviour under a fixed experimental setup.
+
+\subsection{Implementation Setup}
+\label{sec:methodology-implementation}
+
+The implementation uses two paths because the environments differ in observation type. The vector-control environments are executed through ObjectRL \citep{baykal2025objectrl}. A project-side environment bridge exposes the environments through a Gymnasium-style interface and converts observations to one-dimensional \texttt{float32} vectors compatible with the ObjectRL baseline workflow.
+
+The CarRacing environment uses image observations and is therefore handled by a project-side CNN implementation. The observations are converted from height--width--channel to channel--height--width format,
+\[
+(96,96,3) \rightarrow (3,96,96),
+\]
+and scaled to floating point values before being passed to convolutional policy and critic networks. The CarRacing runs were executed on Google Colab with CUDA and copied back into the local repository, where they are processed in the same result pipeline as the vector-control runs.
+
+\subsection{Evaluation Protocol}
+\label{sec:methodology-protocol}
+
+The reported metric is undiscounted evaluation episode return. This differs from the discounted return used in the RL formulation above. For an evaluation episode of horizon $H$, the reported return is
+\[
+G^{\mathrm{eval}}(\tau)=\sum_{t=0}^{H-1} r_{t+1}.
+\]
+Learning curves therefore show training steps before evaluation on the horizontal axis and observed undiscounted evaluation return on the vertical axis.
+
+The vector-control environments are evaluated over a midway budget of 20,000 training steps, while CarRacing is evaluated over 10,000 training steps. The final notebook validates that all 45 algorithm--environment--seed combinations are present and that the result set contains 900 evaluation rows. These validated results are then used for the aggregated tables and learning curves in Section~\ref{sec:experiments}.
+
+\subsection{Role in the Final GRPO Project}
+\label{sec:methodology-grpo-preparation}
+
+At the midway stage, the methodology establishes the notation, baseline matrix, implementation setup, and evaluation protocol. The final project stage will add the GRPO-control method and evaluate it under the same environment set, seed structure, and evaluation metric. This makes the current methodology a reproducible foundation for the later comparison rather than the final algorithmic contribution itself.
