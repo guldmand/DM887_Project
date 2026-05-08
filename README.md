@@ -199,7 +199,7 @@ acrobot_swingup
 Example command pattern:
 
 ```bash
-conda run -n RL python scripts/run_project_objectrl_baseline.py \
+conda run -n <ENV> python scripts/run_project_objectrl_baseline.py \
   --mode midway \
   --algorithm ppo \
   --project-env cartpole_swingup \
@@ -225,7 +225,7 @@ car_racing_continuous
 Example command pattern:
 
 ```bash
-conda run -n RL python scripts/run_carracing_cnn_baseline.py \
+conda run -n <ENV> python scripts/run_carracing_cnn_baseline.py \
   --mode midway \
   --algorithm ppo \
   --seed 0 \
