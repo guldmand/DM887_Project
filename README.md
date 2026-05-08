@@ -241,10 +241,10 @@ The main AI CLI tools used were:
 Other AI-assisted tools used were:
 
 - OpenAI ChatGPT 5.5
-- GitHub Copilot Chat extension in Visual Studio Code, especially `/plan` and `/agent`
+- GitHub Copilot Chat extension in Visual Studio Code, especially `/plan` and `/agent` mode
 
 AI was used for tasks such as planning the repository structure, drafting and refining code, debugging, improving notebooks, generating report-section drafts, reviewing LaTeX, improving academic wording, and checking consistency between the assignment, code, notebook, and report.
 
-Examples of AI prompts and agent instructions are included in the `prompts/` folder.
+Examples of AI prompts and agent instructions are included in the `/prompts` folder.
 
 All final implementation choices, experimental design decisions, result validation, interpretation of outputs, and report content remain my responsibility. AI tools were not used to fabricate experimental results. The reported results are based on project-generated CSV files and figures validated in the final midway notebook.
