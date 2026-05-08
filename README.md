@@ -58,49 +58,6 @@ The midway report focuses on:
 
 ---
 
-## Repository overview
-
-```text
-DM887_Project/
-├── README.md
-├── DM887_Project.pdf
-│
-├── notebooks/
-│   └── DM887_Project_GRPO_Midway_PoC.ipynb
-│
-├── report/
-│   ├── DM887_Report.tex
-│   ├── DM887_Report.pdf
-│   ├── references.bib
-│   └── sections/
-│
-├── results/
-│   ├── processed/project_baselines/
-│   ├── raw/
-│   └── logs/
-│
-├── figures/
-│   └── midway/
-│
-├── scripts/
-│   ├── run_project_objectrl_baseline.py
-│   ├── run_carracing_cnn_baseline.py
-│   ├── carracing_cnn.py
-│   ├── project_envs.py
-│   ├── register_project_envs.py
-│   └── summarize_project_baselines.py
-│
-├── docs/
-├── plans/
-├── prompts/
-├── papers/
-├── slides/
-├── theory/
-└── external/
-```
-
----
-
 ## Result and figure locations
 
 The validated midway result CSV files are stored in:
