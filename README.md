@@ -226,3 +226,25 @@ The final report will extend the current work with:
 - comparison against PPO, SAC, and TD3,
 - final experimental results,
 - final discussion and conclusion.
+
+
+## Disclaimer: AI usage
+
+AI tools were used extensively during this project, both for code development and report writing support.
+
+The main AI CLI tools used were:
+
+- Claude Code
+- GitHub Copilot CLI
+- OpenAI Codex
+
+Other AI-assisted tools used were:
+
+- OpenAI ChatGPT 5.5
+- GitHub Copilot Chat extension in Visual Studio Code, especially `/plan` and `/agent`
+
+AI was used for tasks such as planning the repository structure, drafting and refining code, debugging, improving notebooks, generating report-section drafts, reviewing LaTeX, improving academic wording, and checking consistency between the assignment, code, notebook, and report.
+
+Examples of AI prompts and agent instructions are included in the `prompts/` folder.
+
+All final implementation choices, experimental design decisions, result validation, interpretation of outputs, and report content remain my responsibility. AI tools were not used to fabricate experimental results. The reported results are based on project-generated CSV files and figures validated in the final midway notebook.
