@@ -116,7 +116,7 @@ The notebook does not run training. It only validates and analyzes existing outp
 The summary CSVs and baseline plots can be regenerated from the existing processed results with:
 
 ```bash
-conda run -n RL python scripts/summarize_project_baselines.py --prefix midway
+conda run -n <ENV> python scripts/summarize_project_baselines.py --prefix midway
 ```
 
 This produces or updates the midway summary outputs, including:
@@ -200,9 +200,20 @@ The main notebook for the midway submission is:
 notebooks/DM887_Project_GRPO_Midway_PoC.ipynb
 ```
 
+This is the final report-facing midway notebook. It validates and analyzes the completed baseline results and is the notebook that should be read together with the midway report.
+
+The notebook:
+
+```text
+notebooks/DM887_Project_GoogleColab.ipynb
+```
+
+was used for GPU-based execution of the CarRacing CNN baselines on Google Colab with CUDA. The resulting CarRacing outputs were copied back into the local repository and are included in the validated midway result matrix.
+
 Other notebooks in `notebooks/` are development or provenance material from earlier AI-assisted workflows. They are not required for reading or reproducing the midway report.
 
 ---
+
 
 ## Final project direction
 
