@@ -13,9 +13,8 @@ At the current **midway/interim stage**, the final GRPO-control method has **not
 ## Main midway submission files
 
 The two main files for the midway submission are:  
-  
-<a href="report/DM887_Report.pdf">report/DM887_Report.pdf "Midway Report"</a>   
-<a href="notebooks/DM887_Project_GRPO_Midway_PoC.ipynb">notebooks/DM887_Project_GRPO_Midway_PoC.ipynb "Midway Notebook"</a>   
+<a href="report/DM887_Report.pdf">report/DM887_Report.pdf</a>   
+<a href="notebooks/DM887_Project_GRPO_Midway_PoC.ipynb">notebooks/DM887_Project_GRPO_Midway_PoC.ipynb</a>   
 
 
 The report presents the current interim write-up.
