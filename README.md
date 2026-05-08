@@ -133,7 +133,7 @@ figures/midway/midway_vector_env_baselines.png
 The midway notebook can be executed with:
 
 ```bash
-conda run -n RL python -m nbconvert \
+conda run -n <ENV> python -m nbconvert \
   --to notebook \
   --execute \
   --inplace notebooks/DM887_Project_GRPO_Midway_PoC.ipynb \
